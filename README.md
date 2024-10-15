@@ -30,9 +30,19 @@ Para Executar o programa, basta usar o seguinte comando no terminal:
 
 `./bin/TP1 <algoritmo> <tabuleiro>`
 
-Exemplo: 
+- `<algoritmo>`: Escolha o algoritmo de busca para resolver o Sudoku:
+  - B: BFS (Breadth-First Search)
+  - I: IDS (Iterative Deepening Search)
+  - U: UCS (Uniform Cost Search)
+  - A: A* (A-Star Search)
+  - G: Greedy Search
 
-`A 107006450 025340008 060001070 053000029 610009800 000602007 001093200 008000000 040078591`
+- `<tabuleiro>`: Forneça o tabuleiro do Sudoku como uma string de números, onde cada número representa uma célula do tabuleiro. Use números 0 para representar células vazias. Certifique-se de colocar o tabuleiro entre aspas duplas e cada bloco do tabuleiro entre um espaço.
 
+## Exemplo de uso
 
+Para resolver um Sudoku usando o algoritmo A*:
 
+  ./bin/TP1 A "800700000 003600005 070090200 050007090 000045700 000100034 001000068 008500010 090000400"
+
+Isso imprimirá a solução do Sudoku, juntamente com o número de estados explorados e o tempo de execução em milissegundos.
